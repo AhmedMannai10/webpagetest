@@ -252,7 +252,7 @@ class CPClient
     }
 
 
-    public function getUserContactInfo(int $id): array
+    public function getUserContactInfo(int $id): ?array
     {
         $gql = (new Query('contact'))
             ->setVariables([
